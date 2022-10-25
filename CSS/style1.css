@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&family=Roboto+Condensed&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#searchbar {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 500px;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 800px;
+}
+
+#list {
+    font-size: 1.5em;
+}
+
+#passwords {
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    margin: 1px;
+}
+
+#passwords1 {
+    border: 2px solid rgb(91, 91, 91);
+    margin: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(91, 91, 91);
+}
+
+.animals {
+    display: list-item;
+}
+
+.loader1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #048023;
+    /* Dark Green */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spinloader .7s linear infinite;
+    margin-left: 50px;
+}
+
+.loader img {
+    height: 50px;
+    width: 50px;
+    animation: spinlogo 2s linear infinite;
+}
+
+@keyframes spinloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinlogo {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #c2c2c2;
+}
+
+.container {
+  background: #fff;
+  padding: 22px 29px;
+  width: 430px;
+  border-radius: 8px;
+  transition: .5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.641);
+}
+
+.container header {
+  font-size: 25px;
+  font-weight: 550;
+  line-height: 33px;
+}
+
+.container form {
+  margin: 20px 5px 10px 5px;
+  position: relative;
+}
+
+.container form .field {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+form .field input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+form .field input:focus {
+  border-color: #27ae60;
+  box-shadow: inset 0 0 3px #2fd072;
+}
+
+form .field .showBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+form .indicator {
+  height: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+form .indicator span {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+form .indicator span:nth-child(2) {
+  margin: 0 3px;
+}
+
+form .indicator span.active:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.indicator span.exweak:before {
+  background-color: #ff0015;
+}
+
+.indicator span.weak:before {
+  background-color: rgb(255, 98, 0);
+}
+
+.indicator span.medium:before {
+  background-color: orange;
+}
+
+.indicator span.strong:before {
+  background-color: #23ad5c;
+}
+
+form .text {
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+}
+
+form .text.exweak {
+  color: #ff0015;
+}
+
+form .text.weak {
+  color: #ff5e00;
+}
+
+form .text.medium {
+  color: orange;
+}
+
+form .text.strong {
+  color: #23ad5c;
+}
+
+
+.container2 {
+  display: none;
+}
+
+.container2 h3 {
+  padding-top: 20px;
+}
+
+.wrapper {
+  margin: 1.25rem 1.75rem;
+}
+
+.wrapper .input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 53px;
+  color: #000;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #aaa;
+  padding: 0 2.85rem 0 1rem;
+}
+
+.input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #707070;
+}
+
+.input-box span:hover {
+  color: #4285F4 !important;
+}
+
+.wrapper .generate-btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #4285F4;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: .5s;
+}
+
+.wrapper .generate-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.552);
+}
+
+#toggle-btn {
+  border: 2px solid green;
+  cursor: pointer;
+  padding: 3px;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  transition: .5s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.552);
+}
+
+.field input::placeholder {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 75%;
+  }
+
+  .field input::placeholder {
+    font-size: 30px;
+  }
+
+  .container header {
+    font-size: 25px;
+  }
+
+  .container header {
+    font-size: 34px;
+  }
+}

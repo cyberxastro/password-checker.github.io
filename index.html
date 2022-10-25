@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Created by Gaurav Sharad Suryawanshi !! -->
+
+<head>
+   <meta charset="utf-8">
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <title>Password Strength Checker</title>
+   <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+   <div class="container">
+      <header>Password Strength Checker and Random password generator</header>
+      <form action="#">
+         <div class="field">
+            <!-- calling the trigger function once we type something inside the input field -->
+            <input onkeyup="trigger()" type="password" placeholder="Type password">
+            <span class="showBtn">SHOW</span>
+         </div>
+         <div class="indicator">
+            <span class="exweak"></span>
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+         </div>
+         <div class="text"></div>
+      </form>
+      <br>
+      <!-- Calling the onfunc function to toggle the password generator button is clicked or pressed -->
+      <a id="toggle-btn" onclick="onfunc()">Toggle the password Generator</a>
+      <br>
+      <div class="container2">
+         <h3>Password Generator</h3>
+         <div class="wrapper">
+            <div class="input-box">
+               <input type="text" disabled>
+               <span class="material-symbols-rounded">COPY</span>
+            </div>
+            <button class="generate-btn">Generate Password</button>
+         </div>
+      </div>
+      <script src="/JavaScript/main.js"></script>
+      <br>
+      <br>
+      <h3>You can get a full list of vulnerable passwords <a target="_blank" href="pass.html">here</a></h3>
+      <h5>We highly belive on privacy of every user hence we does not share your password to anyone,</h5>
+      <h5>Even we do not store your password in our database.</h5>
+      <h4>Created by Gaurav Suryawanshi <a target="_blank" href="https://github.com/astroxhacker">To know more click
+            here</a></h4>
+   </div>
+</body>
+
+</html>

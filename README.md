@@ -1,4 +1,7 @@
 # Password Checker and Random password generator
+
+For live preview visit https://passwordnhelp.pages.dev/
+
 As responsible Cyber Enthusiasts, we want to help and/or educate our users to the risks of poor passwords.
 
 Password Checker and Random Password Generator is based on technologies like html, css for frontend developement and majorly javascript of backend developement.
